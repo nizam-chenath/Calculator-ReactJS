@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+import Time from './Componants/Time';
 
 function App() {
   const [result, setResult] = useState("");
@@ -48,7 +49,10 @@ function App() {
         <button name="." onClick={handleClick}>.</button>
         <button className="equal" onClick={calculate} id="result" >=</button>
       </div>
+      <Time/>
     </div> 
+    
+    
   );
 }
 
